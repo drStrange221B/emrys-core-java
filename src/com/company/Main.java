@@ -1,8 +1,10 @@
 package com.company;
 
+import com.company.character.stream.CharacterReader;
 import com.company.input.stream.BufferStream;
 
 import java.io.File;
+import java.nio.charset.Charset;
 
 public class Main {
 
@@ -22,6 +24,16 @@ public class Main {
 //        BufferStream.fileInputStream();
 //
 //        BufferStream.bufferedInputStream();
+
+
+        //find the file encoding in the JVM
+        System.out.println(System.getProperty("file.encoding"));
+        //or
+        System.out.println(Charset.defaultCharset());
+
+        CharacterReader.bufferReader();
+
+
 
     }
 }

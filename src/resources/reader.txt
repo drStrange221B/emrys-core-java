@@ -1,0 +1,41 @@
+Misconceptions Around Automated Testing
+Since the inception of automation testing, many misconceptions are revolving around it that make enterprises not to use it. Below we have tried to clear some of the misconceptions.
+
+Automation Will Replace Manual Testers
+The biggest misconception that is making testers worried is that automation will replace manual testers, but this is completely untrue. Automation testing helps testers to improve their testing process in a better way, it will never replace humans because a little human intervention is always required to run automated tests.
+
+The benefit of using automation testing is that it helps you test repeated, long, and boring tests quickly while saving time and energy, so that you can focus on other test scenarios and functionality of the web app.
+
+Also, tools used in automation testing don’t start testing the web app automatically; a team of testers is always required to start the tool.
+
+You Can Automate Everything With Automation
+Most people believe that they can automate all their test cases, but if this is true, then why do you need manual testers? So, this misconception is also false. The fact is you can never automate 100% of your test cases because an application can never be thoroughly tested. There are always some scenarios that testers often miss while testing a web app. And if the app is reviewed carefully even after testing. You will find one or two bugs in it.
+
+Also, some parts of a web app are easier to test with manual testing rather than automation testing, so 100% automation testing doesn’t make sense. For example, if you are willing to test CAPTCHA scenarios, Code reading scenarios, Performance testing, then it is recommended to use manual approaches rather than using automation testing.
+
+Automation Testing Is Easy
+Do you really think automation testing is easier? Let me tell you, automated testing is one of the hardest parts of the software development life cycle. Even if you’re a professional at automated testing, you would never find it easy to automate the testing process of a software project.
+
+Though many automation testing tools prompt automation as one of the easiest things, it is to gain the user’s attention only. The main features of these types of tools are either automating the capture and replay manual test cases. If you ask any organization about how many test cases they actually automate, you will get to know that only 20-30% test cases are automated.
+
+This happens because setting up an automation testing environment requires a lot of time and effort, as well as you will have to stay up-to-date with the latest system changes. Automation testing might be easier for regression testing, but it is not reliable for every test scenario with new scripts.
+
+Automated Testing Is Too Costly
+Many believe that automated testing requires higher expenses. Well, the upfront costs of automation testing can be higher, but as an organization, you should consider this as a long-term investment. It is true that setting up an automation testing environment and buying an automation tool does require a bit of investment. But, once the environment is set up, you don’t have to invest much into it.
+
+In the next few years, the internal investment will provide you with a strong ROI. So, before implementing automation testing for your web app, prefer analyzing the ROI; it will help you determine the benefits of automation testing after investing a little amount.
+
+Only Recording and Playback Are Involved in Automation
+Most automation testing tools say that you just need to record and playback your testing steps, and the test cases will be automated. That’s the biggest lie testers hear. Automation is not just about recording and playback; it is much more than that. In fact, it is everything that is included in manual testing.
+
+And to be honest, professional automation engineers prefer not to use recording and playback features. In general, the recording and playback feature is only used to analyze how the tool is generating a script for your testing steps.
+
+Once testers get to know the scripting, they use this scripting for creating automated tests. Also, you should have programming experience if you want to perform automation testing, even if you don’t know how to program, you can quickly learn it with practice.
+
+Individuals from non-technical backgrounds have also gained a little programming experience and now working as professional automation engineers. So, if you want to be an amazing automation tester, then don’t run from programming.
+
+Apart from the above points, there are some other misconceptions as well that you will find floating on forum comments, such as you only require unit test automation, it is for regression testing only, it requires a vast team of automation engineers, etc. But, when you will start using automation, you will realize none of them is true. They are just hoax created by people who never used automation.
+
+Conclusion
+Automation is rapidly changing the software development industry, as it is providing new ways of development and testing. It offers faster test coverage, allows us to run parallel tests while saving both time and money. It does require less human intervention, but it can never replace manual testers entirely. So, if you have never tried automation testing for your web app testing, then give it a shot, and you will get to know that the misconceptions revolving around it are completely untrue.
+

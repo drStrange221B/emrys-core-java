@@ -10,6 +10,7 @@ public class Main {
 
         /*
         //htmlPage variable of WebIndex is volatile
+        // with this approach the CPU cycle is waisted
         NaiveIndexer naiveIndexer = new NaiveIndexer();
         naiveIndexer.add(naiveIndexer.createWeblink(2000, "Taming Tiger, Part 2", "http://www.javaworld.com/article/2072759/core-java/taming-tiger--part-2.html", "http://www.javaworld.com"));
         naiveIndexer.add(naiveIndexer.createWeblink(2001, "How do I import a pre-existing Java project into Eclipse and get up and running?", "http://stackoverflow.com/questions/142863/how-do-i-import-a-pre-existing-java-project-into-eclipse-and-get-up-and-running", "http://www.stackoverflow.com"));
@@ -20,6 +21,7 @@ public class Main {
          */
 
         //wait and notify for happens before relationship
+        //with this approach the CPU cycle is not wasted
 
         WaitNotifyIndexer waitNotifyIndexer = new WaitNotifyIndexer();
         waitNotifyIndexer.add(waitNotifyIndexer.createWeblink(2000, "Taming Tiger, Part 2", "https://www.javaworld.com/article/2072759/core-java/taming-tiger--part-2.html", "http://www.javaworld.com"));

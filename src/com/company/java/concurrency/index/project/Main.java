@@ -31,13 +31,5 @@ public class Main {
         waitNotifyIndexer.go();
 
 
-
-
-
-
-
-
-
-
     }
 }

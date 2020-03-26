@@ -1,0 +1,76 @@
+Traditional Thread is Thread per task approach. This is scalable only for small scale application.
+
+Limitations of Traditional Thread on Large Scale Application:
+1) Thread Creation and Teardown costs
+2) Resource consumption (esp. memory)
+4) Instability: for a given system the threshold on number of thread creation is limited.
+   we can create limitless threads
+
+   The Solution of all these is Executors Framework. i.e Executors and Tasks to Threads.
+Using this framework we will not deal with Thread directly. Threads are handled inherently by Executors
+Framework. Executor Framework is very Flexible and Powerful task execution Framework. It consists of
+1) Work Queue (Tasks)
+2) Thread Pool (n number of thread)
+
+There there two types of Tasks
+1) Runnable ( does not return)
+2) Callable ( returns)
+
+
+class TheadPerTaskExecutor implements Executor{
+
+    public void executor(Runnable r){
+
+        new Thread(r).start();
+        }
+
+ }
+
+ Executor executor = new ThreadPerTaskExecutor();
+ executor.execute(someRunnable);
+ executor.execute(someOtherRunnable);
+
+ Decoupling task submission from task execution.
+
+
+ Java.util.concurrent.Executors has methods that returns ExecutorService of Executor interface
+ 1) newFixedThreadPool
+ 2) newCachedThreadPool
+ 3) newSingleThreadExecutor
+
+
+ 4)newScheduledThreadPool -> returns ScheduledExecutorService   of type ExecutorService of Executor interface
+
+
+For heavily loaded application newFixedThreadPool is preferred
+where as for light weight application newCachedThreadPool is preferred
+
+
+ExecutorService Life cycle
+1) Running: Initially Executor Service will be in running state, in this state it accept tasks and execute them.
+
+2) Shutting Down: Next Executor service move down to shutting down state by invoking shutdown() method or ShutdownNow() method.
+                  Once any of these method is executed no new task will be accepted by executor service.
+                  Trying to submit new task will run into runtime exception.
+                  If Shutdown() method is executed then all the task will be executed in graceful way. i.e
+                  all the task will be executed to completion.
+                  If ShutdownNow is invoked, it will shutdown abruptly.
+3) Terminated:  why do we have to care about thread terminated or not?
+                for monitoring, in large scale application, we may want to reuse same executor. and at some
+                point we may want to shutdown executor. In such case we may call executor.shutdown() method.
+
+
+                   if(!executor.awaitTermination(60, TimeUnit.SECONDS)){
+
+                        executor.shutdownNow();
+
+                   }
+
+ Note: Executors returns by these methods are instances of class called ThreadPoolExecutor
+
+
+ Future: Future instance represents the life cycle of the task. In other words it can be used to track the
+         progress of the submitted task.
+
+
+

@@ -22,7 +22,7 @@ public class HttpConnect {
 
         HttpResponse response = httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
-        System.out.println(response.body().toString());
+//        System.out.println(response.body().toString());
         return response.body().toString();
 
 

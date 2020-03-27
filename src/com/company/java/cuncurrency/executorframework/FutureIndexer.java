@@ -1,11 +1,9 @@
 package com.company.java.cuncurrency.executorframework;
 
 import com.company.java.concurrency.index.project.HttpConnect;
-import com.company.java.concurrency.index.project.NaiveIndexer;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URISyntaxException;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
